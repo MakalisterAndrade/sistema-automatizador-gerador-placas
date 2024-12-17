@@ -37,8 +37,7 @@ def processar_dados():
 
         # Processar o intervalo de placas
         processar_intervalo(pdf_path, coordenadas, intervalo_inicio, intervalo_fim, deslocamento_x=0, deslocamento_y=100)
-        messagebox.showinfo("Concluído", "Processamento concluído com sucesso!\n" +
-                            "Placas salvas dentro da pasta ''placas'' ")
+        messagebox.showinfo("Concluído", "Placas salvas dentro da pasta ''placas''!")
     except ValueError:
         messagebox.showerror("Erro", "Por favor, insira números válidos para o intervalo de placas.")
 
