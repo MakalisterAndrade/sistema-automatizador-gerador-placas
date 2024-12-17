@@ -18,6 +18,7 @@ A aplicação foi construída em **Python** utilizando as bibliotecas **Tkinter*
 - **Python**: Linguagem de programação utilizada para o desenvolvimento do sistema.
 - **Tkinter**: Biblioteca de interface gráfica para Python, utilizada para criar as janelas, botões e demais componentes do sistema.
 - **Fitz (PyMuPDF)**: Biblioteca para manipulação de arquivos PDF, utilizada para gerar os PDFs.
+- **Pyinstaller**: Biblioteca responsável por buildar o script em um arquivo único
 
 ## Como Rodar o Sistema
 
@@ -58,6 +59,27 @@ python Script Original/processa_placas.py
 ```
 
 Isso abrirá a interface gráfica do sistema onde você poderá gerar os PDF.
+
+4. Buildando o arquivo .exe
+```bash
+pyinstaller --noconsole --onefile --icon=icon.ico Script\ Original/processa_placas_new.py
+```
+Detalhamento:
+* pyinstaller:
+Chama o PyInstaller, que converte o script Python em um executável para Windows ou outras plataformas.
+
+* --noconsole:
+Especifica que o aplicativo não deve abrir o console ao ser executado. Isso é útil para programas com interface gráfica (GUI), evitando janelas de terminal desnecessárias.
+
+* --onefile:
+Cria um único arquivo executável (.exe), agrupando todos os recursos necessários (dependências, bibliotecas) em um único binário. Isso facilita o compartilhamento do programa.
+
+* --icon=icon.ico:
+Define o ícone do aplicativo. O arquivo icon.ico deve estar no formato correto (.ico) e disponível no caminho especificado.
+
+* Script\ Original/processa_placas_new.py:
+Indica o caminho do script Python a ser convertido. Nesse caso, o arquivo está localizado dentro da pasta Script Original.
+
 
 ## Estrutura do Projeto
 
