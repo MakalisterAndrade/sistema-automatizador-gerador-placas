@@ -17,7 +17,7 @@ A aplicação foi construída em **Python** utilizando as bibliotecas **Tkinter*
 
 - **Python**: Linguagem de programação utilizada para o desenvolvimento do sistema.
 - **Tkinter**: Biblioteca de interface gráfica para Python, utilizada para criar as janelas, botões e demais componentes do sistema.
-- **Fitz (PyMuPDF)**: Biblioteca para manipulação de arquivos PDF, utilizada para gerar os PDS e documentos relacionados.
+- **Fitz (PyMuPDF)**: Biblioteca para manipulação de arquivos PDF, utilizada para gerar os PDFs.
 
 ## Como Rodar o Sistema
 
@@ -25,6 +25,7 @@ A aplicação foi construída em **Python** utilizando as bibliotecas **Tkinter*
 
 1. Python >=3.12.3 instalado.
 2. Bibliotecas necessárias:
+   - CustomTkinter (Atualização no código novo, novo design para a interface)
    - Tkinter (já incluído na instalação padrão do Python)
    - Fitz (PyMuPDF)
 
@@ -33,7 +34,7 @@ A aplicação foi construída em **Python** utilizando as bibliotecas **Tkinter*
 Para instalar a biblioteca Fitz (PyMuPDF), execute o seguinte comando:
 
 ```bash
-pip install pymupdf
+pip install pymupdf customtkinter
 ```
 
 ### Executando o Sistema
