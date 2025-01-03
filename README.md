@@ -35,7 +35,7 @@ A aplicação foi construída em **Python** utilizando as bibliotecas **Tkinter*
 Para instalar a biblioteca Fitz (PyMuPDF), execute o seguinte comando:
 
 ```bash
-pip install pymupdf customtkinter
+pip install pymupdf customtkinter pyinstaller
 ```
 
 ### Executando o Sistema
