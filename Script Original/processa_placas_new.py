@@ -7,6 +7,11 @@ from tkinter import messagebox
 def limpar_pasta_placas():
     try:
         folder_path = 'placas'
+        
+        # Verifica se a pasta existe; se não, cria a pasta
+        os.makedirs(folder_path, exist_ok=True)
+
+        # Remove todos os arquivos dentro da pasta
         for filename in os.listdir(folder_path):
             file_path = os.path.join(folder_path, filename)
             if os.path.isfile(file_path):
@@ -15,8 +20,8 @@ def limpar_pasta_placas():
     except Exception as e:
         messagebox.showerror(
             "Erro",
-            "Ocorreu um erro ao limpar a pasta 'placas'. \n" +
-            "Você criou uma pasta chamada 'placas' dentro da pasta raiz? \n" +
+            "Ocorreu um erro ao limpar/criar a pasta 'placas'. \n" +
+            "Verifique se você tem as permissões necessárias ou se algum arquivo está em uso. \n" +
             "Você tem um arquivo PDF de dentro da pasta 'placas' que está aberto?"
         )
 
